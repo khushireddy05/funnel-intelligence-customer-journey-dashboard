@@ -1,0 +1,154 @@
+case_id,customer_id,opened_date,contact_channel,case_category,resolution_status,resolution_hours,satisfaction_score
+CS000001,C000117,2026-04-24,Email,Delivery,Resolved,52.0,5
+CS000002,C000125,2025-09-16,Phone,Maintenance,Resolved,96.0,3
+CS000003,C000132,2025-12-23,Email,Delivery,Resolved,62.0,5
+CS000004,C000152,2025-06-24,Phone,Delivery,Resolved,51.0,4
+CS000005,C000167,2025-05-19,Email,Digital Services,Resolved,10.0,5
+CS000006,C000184,2025-12-12,Dealer,Digital Services,Resolved,94.0,2
+CS000007,C000231,2025-12-27,Phone,Delivery,Open,,1
+CS000008,C000311,2025-11-21,Email,Delivery,Resolved,111.0,3
+CS000009,C000347,2025-07-01,Phone,Vehicle Issue,Resolved,27.0,5
+CS000010,C000411,2026-08-28,Chat,Vehicle Issue,Resolved,22.0,5
+CS000011,C000542,2025-01-17,Dealer,Finance,Resolved,41.0,5
+CS000012,C000569,2025-06-02,Chat,Delivery,Resolved,89.0,4
+CS000013,C000683,2024-10-09,Dealer,Vehicle Issue,Resolved,107.0,4
+CS000014,C000737,2026-01-05,Dealer,Vehicle Issue,Resolved,122.0,4
+CS000015,C000819,2025-04-10,Dealer,Finance,Resolved,66.0,5
+CS000016,C000821,2024-09-02,Email,Vehicle Issue,Resolved,43.0,4
+CS000017,C000854,2026-02-04,Phone,Vehicle Issue,Resolved,108.0,4
+CS000018,C000877,2025-08-02,Phone,Digital Services,Resolved,82.0,4
+CS000019,C000894,2025-07-26,Chat,Maintenance,Resolved,32.0,5
+CS000020,C000915,2025-03-20,Email,Vehicle Issue,Resolved,21.0,5
+CS000021,C000943,2025-06-16,Email,Vehicle Issue,Open,,2
+CS000022,C000978,2025-03-14,Email,Finance,Resolved,15.0,5
+CS000023,C001008,2026-04-09,Phone,Finance,Resolved,88.0,5
+CS000024,C001010,2024-10-17,Phone,Maintenance,Resolved,32.0,5
+CS000025,C001032,2024-09-09,Chat,Vehicle Issue,Open,,2
+CS000026,C001047,2024-10-10,Chat,Vehicle Issue,Resolved,34.0,5
+CS000027,C001048,2024-06-12,Email,Digital Services,Resolved,26.0,5
+CS000028,C001056,2025-10-23,Chat,Delivery,Resolved,50.0,3
+CS000029,C001059,2025-05-22,Dealer,Maintenance,Resolved,28.0,4
+CS000030,C001148,2026-01-01,Phone,Vehicle Issue,Resolved,37.0,5
+CS000031,C001151,2025-06-13,Chat,Finance,Resolved,17.0,5
+CS000032,C001152,2024-12-16,Email,Digital Services,Resolved,33.0,4
+CS000033,C001178,2024-12-27,Phone,Maintenance,Resolved,55.0,4
+CS000034,C001185,2025-09-03,Dealer,Finance,Resolved,54.0,5
+CS000035,C001197,2024-10-02,Email,Maintenance,Resolved,55.0,5
+CS000036,C001246,2025-03-24,Phone,Finance,Resolved,20.0,4
+CS000037,C001253,2025-11-25,Phone,Delivery,Resolved,17.0,5
+CS000038,C001278,2025-05-02,Phone,Maintenance,Open,,1
+CS000039,C001288,2024-06-16,Chat,Finance,Resolved,134.0,3
+CS000040,C001314,2025-02-18,Phone,Digital Services,Resolved,27.0,3
+CS000041,C001399,2024-07-30,Email,Finance,Open,,1
+CS000042,C001404,2026-03-06,Email,Finance,Resolved,77.0,4
+CS000043,C001408,2025-11-05,Dealer,Maintenance,Resolved,40.0,5
+CS000044,C001488,2025-10-19,Phone,Delivery,Resolved,33.0,5
+CS000045,C001495,2024-08-19,Email,Maintenance,Resolved,32.0,5
+CS000046,C001589,2026-04-04,Chat,Finance,Resolved,47.0,5
+CS000047,C001591,2025-10-28,Phone,Delivery,Resolved,29.0,5
+CS000048,C001637,2025-12-02,Phone,Maintenance,Resolved,11.0,4
+CS000049,C001648,2025-07-30,Chat,Delivery,Resolved,38.0,5
+CS000050,C001651,2025-07-05,Dealer,Maintenance,Resolved,21.0,5
+CS000051,C001657,2025-04-10,Phone,Finance,Resolved,17.0,5
+CS000052,C001671,2025-11-03,Phone,Digital Services,Resolved,68.0,4
+CS000053,C001689,2025-08-18,Phone,Digital Services,Resolved,46.0,4
+CS000054,C001731,2024-08-27,Email,Digital Services,Resolved,106.0,3
+CS000055,C001738,2025-02-09,Dealer,Maintenance,Resolved,8.0,5
+CS000056,C001764,2025-02-21,Email,Finance,Resolved,27.0,5
+CS000057,C001802,2024-12-09,Email,Vehicle Issue,Resolved,73.0,5
+CS000058,C001849,2025-08-07,Email,Vehicle Issue,Resolved,119.0,5
+CS000059,C001862,2025-10-30,Email,Finance,Resolved,32.0,5
+CS000060,C001880,2024-12-19,Phone,Delivery,Open,,3
+CS000061,C001922,2025-12-01,Phone,Maintenance,Resolved,48.0,5
+CS000062,C001957,2025-03-06,Chat,Vehicle Issue,Resolved,25.0,4
+CS000063,C001988,2025-10-23,Email,Delivery,Open,,2
+CS000064,C002044,2025-10-08,Chat,Delivery,Resolved,124.0,3
+CS000065,C002124,2025-01-08,Phone,Vehicle Issue,Resolved,8.0,5
+CS000066,C002147,2024-12-03,Chat,Maintenance,Resolved,21.0,4
+CS000067,C002165,2025-03-28,Chat,Digital Services,Resolved,104.0,4
+CS000068,C002196,2024-11-16,Dealer,Vehicle Issue,Resolved,11.0,5
+CS000069,C002266,2025-01-07,Chat,Finance,Resolved,45.0,5
+CS000070,C002286,2025-01-26,Chat,Delivery,Resolved,30.0,5
+CS000071,C002330,2024-10-15,Chat,Digital Services,Resolved,41.0,3
+CS000072,C002444,2025-05-16,Email,Maintenance,Resolved,54.0,5
+CS000073,C002503,2025-12-13,Dealer,Digital Services,Resolved,31.0,5
+CS000074,C002507,2025-03-12,Dealer,Finance,Resolved,51.0,5
+CS000075,C002538,2025-11-11,Email,Finance,Resolved,45.0,5
+CS000076,C002686,2025-01-23,Chat,Finance,Resolved,33.0,5
+CS000077,C002687,2024-08-23,Dealer,Finance,Resolved,16.0,5
+CS000078,C002696,2025-12-23,Dealer,Vehicle Issue,Resolved,70.0,5
+CS000079,C002737,2025-04-21,Phone,Vehicle Issue,Resolved,74.0,5
+CS000080,C002805,2026-01-09,Phone,Maintenance,Resolved,138.0,4
+CS000081,C002895,2024-11-27,Dealer,Digital Services,Resolved,43.0,5
+CS000082,C002954,2026-04-21,Phone,Maintenance,Resolved,108.0,3
+CS000083,C002974,2025-06-03,Chat,Delivery,Resolved,38.0,5
+CS000084,C002985,2025-04-07,Email,Maintenance,Resolved,39.0,5
+CS000085,C003043,2025-07-04,Chat,Finance,Resolved,70.0,4
+CS000086,C003073,2026-04-11,Dealer,Delivery,Resolved,27.0,5
+CS000087,C003083,2025-08-24,Chat,Vehicle Issue,Resolved,28.0,5
+CS000088,C003099,2025-05-31,Email,Finance,Resolved,60.0,4
+CS000089,C003147,2025-05-14,Chat,Delivery,Resolved,28.0,4
+CS000090,C003177,2024-09-14,Phone,Maintenance,Resolved,49.0,5
+CS000091,C003235,2025-11-15,Dealer,Maintenance,Resolved,107.0,4
+CS000092,C003250,2024-07-01,Chat,Finance,Resolved,63.0,5
+CS000093,C003263,2024-06-02,Dealer,Digital Services,Resolved,84.0,4
+CS000094,C003276,2025-11-23,Dealer,Digital Services,Resolved,68.0,5
+CS000095,C003310,2024-08-01,Email,Digital Services,Open,,2
+CS000096,C003317,2026-05-17,Chat,Digital Services,Resolved,17.0,5
+CS000097,C003327,2025-09-07,Phone,Maintenance,Resolved,63.0,4
+CS000098,C003374,2026-01-26,Chat,Delivery,Open,,3
+CS000099,C003375,2024-10-19,Email,Maintenance,Resolved,42.0,5
+CS000100,C003403,2025-03-27,Dealer,Delivery,Resolved,47.0,5
+CS000101,C003435,2026-05-12,Dealer,Vehicle Issue,Resolved,68.0,4
+CS000102,C003493,2026-03-31,Chat,Vehicle Issue,Resolved,30.0,5
+CS000103,C003529,2025-10-22,Email,Finance,Resolved,37.0,4
+CS000104,C003560,2024-10-10,Email,Delivery,Resolved,23.0,5
+CS000105,C003571,2025-04-18,Phone,Vehicle Issue,Resolved,49.0,4
+CS000106,C003585,2024-08-28,Phone,Delivery,Resolved,28.0,5
+CS000107,C003586,2025-04-10,Phone,Digital Services,Resolved,82.0,5
+CS000108,C003590,2026-01-21,Dealer,Delivery,Resolved,23.0,3
+CS000109,C003597,2024-08-24,Chat,Finance,Resolved,51.0,5
+CS000110,C003600,2025-03-16,Chat,Digital Services,Resolved,58.0,5
+CS000111,C003753,2026-03-20,Chat,Digital Services,Resolved,65.0,3
+CS000112,C003866,2025-02-10,Phone,Finance,Resolved,32.0,5
+CS000113,C003893,2025-05-30,Phone,Digital Services,Open,,3
+CS000114,C003938,2024-09-08,Dealer,Delivery,Resolved,68.0,3
+CS000115,C003951,2025-06-16,Email,Maintenance,Resolved,75.0,5
+CS000116,C003977,2025-07-23,Dealer,Digital Services,Resolved,63.0,4
+CS000117,C003979,2025-02-10,Email,Finance,Open,,2
+CS000118,C003999,2025-06-01,Phone,Finance,Resolved,32.0,5
+CS000119,C004006,2024-11-29,Phone,Digital Services,Resolved,107.0,3
+CS000120,C004024,2024-07-29,Phone,Digital Services,Open,,2
+CS000121,C004110,2025-05-11,Dealer,Maintenance,Resolved,36.0,5
+CS000122,C004122,2026-08-14,Email,Finance,Resolved,31.0,5
+CS000123,C004155,2026-05-21,Chat,Finance,Resolved,18.0,5
+CS000124,C004162,2025-11-07,Dealer,Maintenance,Resolved,15.0,5
+CS000125,C004208,2026-03-07,Chat,Maintenance,Resolved,26.0,5
+CS000126,C004248,2026-07-26,Dealer,Vehicle Issue,Resolved,53.0,3
+CS000127,C004267,2026-01-24,Dealer,Vehicle Issue,Resolved,48.0,4
+CS000128,C004300,2024-09-22,Dealer,Delivery,Resolved,27.0,5
+CS000129,C004349,2025-12-27,Dealer,Maintenance,Resolved,14.0,5
+CS000130,C004387,2026-03-12,Chat,Finance,Resolved,58.0,4
+CS000131,C004396,2024-08-15,Phone,Delivery,Open,,3
+CS000132,C004435,2024-06-19,Dealer,Finance,Resolved,19.0,5
+CS000133,C004511,2026-01-05,Chat,Vehicle Issue,Resolved,33.0,5
+CS000134,C004519,2024-10-25,Dealer,Digital Services,Resolved,39.0,5
+CS000135,C004528,2025-07-02,Dealer,Delivery,Resolved,133.0,4
+CS000136,C004539,2025-04-05,Phone,Maintenance,Resolved,90.0,4
+CS000137,C004554,2026-03-29,Email,Delivery,Resolved,49.0,5
+CS000138,C004555,2025-07-30,Chat,Vehicle Issue,Resolved,19.0,5
+CS000139,C004658,2024-09-29,Dealer,Digital Services,Resolved,45.0,5
+CS000140,C004685,2026-05-22,Chat,Delivery,Open,,2
+CS000141,C004717,2024-12-14,Chat,Digital Services,Resolved,40.0,4
+CS000142,C004719,2026-02-22,Dealer,Delivery,Resolved,62.0,4
+CS000143,C004773,2024-09-11,Dealer,Finance,Open,,2
+CS000144,C004780,2026-05-19,Dealer,Delivery,Resolved,35.0,5
+CS000145,C004790,2025-11-11,Chat,Digital Services,Resolved,83.0,5
+CS000146,C004827,2025-08-23,Email,Maintenance,Resolved,27.0,5
+CS000147,C004836,2026-01-31,Chat,Digital Services,Resolved,13.0,5
+CS000148,C004883,2025-08-18,Dealer,Vehicle Issue,Open,,2
+CS000149,C004924,2024-12-27,Email,Delivery,Resolved,23.0,4
+CS000150,C004930,2025-09-10,Email,Delivery,Open,,3
+CS000151,C004932,2025-07-03,Dealer,Delivery,Resolved,36.0,5
+CS000152,C004982,2025-10-20,Dealer,Vehicle Issue,Resolved,29.0,4
+CS000153,C004999,2024-06-02,Email,Delivery,Resolved,54.0,4

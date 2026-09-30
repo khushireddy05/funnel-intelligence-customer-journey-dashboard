@@ -1,0 +1,9 @@
+stage,stage_order
+Initial Interaction,1
+Engaged Prospect,2
+Lead,3
+Qualified Lead,4
+Opportunity,5
+Offer,6
+Purchase,7
+Repeat Purchase,8

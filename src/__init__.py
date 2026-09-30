@@ -1,0 +1,1 @@
+"""Funnel Intelligence data pipeline."""
