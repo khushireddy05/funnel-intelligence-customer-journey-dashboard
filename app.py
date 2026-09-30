@@ -183,6 +183,9 @@ def main() -> None:
         st.error("Processed data is missing. Run `python3 -m src.pipeline` first.")
         st.stop()
     data = apply_filters(load_data())
+    if data["events"].empty:
+        st.warning("No customer-journey records match the selected filters. Expand the reporting period or clear one or more filters.")
+        st.stop()
     tabs = st.tabs(["Executive", "Funnel", "Marketing", "Sales", "Customer Care", "Loyalty"])
     with tabs[0]: executive_page(data)
     with tabs[1]: funnel_page(data)
