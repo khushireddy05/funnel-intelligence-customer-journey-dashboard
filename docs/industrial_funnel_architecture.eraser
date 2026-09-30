@@ -1,0 +1,120 @@
+// Funnel Intelligence & Customer Journey Platform — Industrial Architecture
+// Paste into Eraser: New file → Diagram as Code → Architecture Diagram.
+
+direction right
+colorMode bold
+styleMode shadow
+typeface clean
+
+SourceSystems [color: blue] {
+  MarketingPlatforms [label: "Marketing platforms\nAds · campaigns · web analytics"]
+  CRM [label: "CRM / lead management\nLeads · qualification · opportunities"]
+  DealerDMS [label: "Dealer & sales systems\nOffers · orders · vehicle sales"]
+  CustomerCare [label: "Customer-care systems\nCases · channels · CSAT"]
+  DigitalEvents [label: "Website & app events\nClickstream · configurator · consent"]
+  MasterData [label: "Customer / product MDM\nIdentity · region · vehicle catalog"]
+}
+
+IntegrationAndSecurity [color: purple] {
+  APIGateway [label: "API gateway\nOAuth2 · rate limits · audit"]
+  EventStreaming [label: "Event streaming\nEvent Hubs / Kafka"]
+  BatchIngestion [label: "Batch ingestion\nData Factory / connectors"]
+  SecureTransfer [label: "Secure file exchange\nSFTP · dealer extracts"]
+  Secrets [label: "Key Vault\nSecrets · certificates · keys"]
+  Identity [label: "Entra ID\nSSO · managed identities"]
+}
+
+DataPlatform [color: teal] {
+  Landing [label: "Bronze / landing zone\nImmutable source events\nEncrypted data lake"]
+  SchemaRegistry [label: "Data contracts & schema registry\nVersioning · compatibility"]
+  Orchestrator [label: "Orchestration\nSchedules · retries · dependencies"]
+  QualityEngine [label: "Data-quality engine\nCompleteness · validity · duplicates\nFunnel-sequence checks"]
+  IdentityResolution [label: "Customer identity resolution\nCRM ID · email hash · vehicle ID\nGolden Customer ID"]
+  Transformation [label: "Spark / SQL transformations\nStandardisation · attribution\nJourney sessionisation"]
+  Quarantine [label: "Quarantine zone\nInvalid / unresolved records"]
+  CuratedLakehouse [label: "Silver / curated lakehouse\nConformed customer journey"]
+  Warehouse [label: "Gold warehouse\nStar schema · aggregates\nHistorical snapshots"]
+  FeatureStore [label: "Feature store\nLead score · churn · next best action"]
+}
+
+GovernanceAndPrivacy [color: orange] {
+  Catalog [label: "Data catalog & lineage\nOwnership · glossary · lineage"]
+  Privacy [label: "Privacy controls\nConsent · pseudonymisation\nRetention · GDPR DSAR"]
+  AccessPolicy [label: "Access policy\nRBAC / ABAC · row-level access"]
+  AuditLogs [label: "Audit logs\nAccess · transformations · exports"]
+}
+
+AnalyticsAndServing [color: green] {
+  SemanticModel [label: "Power BI semantic model\nCertified KPIs · DAX · RLS"]
+  ExecutiveBI [label: "Executive BI\nConversion · revenue · retention"]
+  FunctionalBI [label: "Marketing · Sales · Care dashboards\nDrill-through / self-service"]
+  StreamlitApp [label: "Operational Streamlit app\nReal-time investigation\nFiltered data export"]
+  MLScoring [label: "Model serving\nLead propensity · churn risk\nNext-best action"]
+  Alerting [label: "Alerts & workflows\nTeams · email · CRM tasks"]
+  CRMActivation [label: "CRM / campaign activation\nAssigned lead action\nAudience suppression"]
+}
+
+Operations [color: red] {
+  CICD [label: "CI/CD & IaC\nGitHub Actions · Terraform\nDev / Test / Prod"]
+  Monitoring [label: "Observability\nFreshness · volume · SLA\nCost · pipeline failures"]
+  ModelMonitoring [label: "ML monitoring\nDrift · bias · performance"]
+  IncidentManagement [label: "Incident management\nJira / ServiceNow\nData issue workflow"]
+}
+
+// Ingestion pathways
+MarketingPlatforms > BatchIngestion: Daily API extracts
+CRM > BatchIngestion: Incremental CDC
+DealerDMS > SecureTransfer: Daily dealer files
+CustomerCare > BatchIngestion: Incremental case extracts
+DigitalEvents > EventStreaming: Real-time events
+MasterData > BatchIngestion: Master-data refresh
+
+BatchIngestion > Landing: Batch raw data
+SecureTransfer > Landing: Validated files
+EventStreaming > Landing: Streaming raw events
+APIGateway > EventStreaming: Secure APIs
+Secrets --> APIGateway: Credentials
+Identity --> APIGateway, BatchIngestion, Orchestrator: Managed access
+
+// Processing, quality, and governance
+Landing > SchemaRegistry: Validate contract
+SchemaRegistry > QualityEngine: Accepted schema
+Landing > QualityEngine: Profile raw data
+QualityEngine > Quarantine: Failed records
+QualityEngine > IdentityResolution: Valid records
+MasterData > IdentityResolution: Match reference data
+IdentityResolution > Transformation: Golden Customer ID
+Transformation > CuratedLakehouse: Conformed events
+Transformation > Warehouse: Fact / dimension tables
+Transformation > FeatureStore: Features
+Orchestrator > BatchIngestion, QualityEngine, Transformation: Run and retry
+
+Catalog <> Landing, CuratedLakehouse, Warehouse, SemanticModel: Lineage and glossary
+Privacy <> IdentityResolution, CuratedLakehouse, Warehouse: Minimise and protect PII
+AccessPolicy > Warehouse, SemanticModel, StreamlitApp: Enforce user access
+AccessPolicy --> AuditLogs: Access decisions
+
+// Reporting, action, and feedback loop
+Warehouse > SemanticModel: Certified datasets
+SemanticModel > ExecutiveBI, FunctionalBI: Governed metrics
+Warehouse > StreamlitApp: Read-only analytical queries
+FeatureStore > MLScoring: Online / batch features
+MLScoring > CRMActivation: Scores and recommendations
+FunctionalBI > Alerting: KPI threshold breached
+MLScoring > Alerting: High-risk customer / lead
+Alerting > CRMActivation: Create task or campaign audience
+CRMActivation --> CRM: Sales / marketing action
+
+// Platform operations
+CICD > Orchestrator, Transformation, SemanticModel, StreamlitApp: Versioned deployment
+Monitoring <-- Orchestrator, QualityEngine, Warehouse, SemanticModel, StreamlitApp: Health and SLA telemetry
+ModelMonitoring <-- MLScoring: Model telemetry
+Monitoring > IncidentManagement: Pipeline / freshness alert
+QualityEngine > IncidentManagement: Data-quality issue
+
+legend [position: bottom] {
+  [connection: >, color: teal, label: "Primary data flow"]
+  [connection: -->, color: orange, label: "Security, control, or asynchronous flow"]
+  [connection: <>, color: purple, label: "Governance relationship"]
+  [color: red, label: "Operational resilience"]
+}
