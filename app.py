@@ -178,7 +178,6 @@ def loyalty_page(data: dict[str, pd.DataFrame]) -> None:
 
 def main() -> None:
     st.title("Funnel Intelligence & Customer Journey Dashboard")
-    st.caption("Interactive portfolio dashboard using synthetic/demo data only.")
     if not DATA.exists():
         st.error("Processed data is missing. Run `python3 -m src.pipeline` first.")
         st.stop()
